@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "ticker": "AAPL",
+    "category": "factual",
+    "question": "What were Apple's total net sales for the quarter ended June 27, 2026?",
+    "ground_truth": "Apple's total net sales for the quarter ended June 27, 2026 were $109,417 million, versus $94,036 million a year earlier.",
+    "key_facts": [
+      "109,417"
+    ]
+  },
+  {
+    "id": 2,
+    "ticker": "AAPL",
+    "category": "factual",
+    "question": "What was Apple's net income in its latest 10-Q quarter?",
+    "ground_truth": "Apple's net income for the quarter ended June 27, 2026 was $29,789 million, versus $23,434 million a year earlier.",
+    "key_facts": [
+      "29,789"
+    ]
+  },
+  {
+    "id": 3,
+    "ticker": "MSFT",
+    "category": "factual",
+    "question": "What was Microsoft's total revenue for the quarter ended September 30, 2026?",
+    "ground_truth": "Microsoft's total revenue for the quarter ended September 30, 2026 was $92,279 million, versus $77,673 million a year earlier.",
+    "key_facts": [
+      "92,279"
+    ]
+  },
+  {
+    "id": 4,
+    "ticker": "NVDA",
+    "category": "factual",
+    "question": "What was NVIDIA's revenue for the quarter ended July 26, 2026?",
+    "ground_truth": "NVIDIA's revenue for the quarter ended July 26, 2026 was $96,221 million, versus $46,743 million a year earlier.",
+    "key_facts": [
+      "96,221"
+    ]
+  },
+  {
+    "id": 5,
+    "ticker": "META",
+    "category": "factual",
+    "question": "What was Meta's revenue in the quarter ended September 30, 2026?",
+    "ground_truth": "Meta's revenue for the quarter ended September 30, 2026 was $64,601 million, versus $51,242 million a year earlier.",
+    "key_facts": [
+      "64,601"
+    ]
+  },
+  {
+    "id": 6,
+    "ticker": "TSLA",
+    "category": "factual",
+    "question": "What were Tesla's total revenues for the quarter ended September 30, 2026?",
+    "ground_truth": "Tesla's total revenues for the quarter ended September 30, 2026 were $28,046 million, versus $28,095 million a year earlier.",
+    "key_facts": [
+      "28,046"
+    ]
+  },
+  {
+    "id": 7,
+    "ticker": "META",
+    "category": "factual",
+    "question": "What was Meta's net income for the quarter ended September 30, 2026?",
+    "ground_truth": "Meta's net income for the quarter ended September 30, 2026 was $9,860 million, versus $2,709 million a year earlier.",
+    "key_facts": [
+      "9,860"
+    ]
+  },
+  {
+    "id": 8,
+    "ticker": "TSLA",
+    "category": "factual",
+    "question": "What was Tesla's net income in the quarter ended September 30, 2026?",
+    "ground_truth": "Tesla's net income for the quarter ended September 30, 2026 was $804 million, versus $1,389 million a year earlier.",
+    "key_facts": [
+      "804"
+    ]
+  },
+  {
+    "id": 9,
+    "ticker": "MSFT",
+    "category": "ratio",
+    "question": "What was Microsoft's net margin in its latest quarter?",
+    "ground_truth": "Microsoft's net margin was 39.69% (net income $36,629 million divided by revenue $92,279 million) for the quarter ended September 30, 2026.",
+    "key_facts": [
+      "39.69"
+    ]
+  },
+  {
+    "id": 10,
+    "ticker": "AAPL",
+    "category": "ratio",
+    "question": "What was Apple's net margin in its latest quarter?",
+    "ground_truth": "Apple's net margin was 27.23% (net income $29,789 million divided by net sales $109,417 million) for the quarter ended June 27, 2026.",
+    "key_facts": [
+      "27.23"
+    ]
+  },
+  {
+    "id": 11,
+    "ticker": "NVDA",
+    "category": "ratio",
+    "question": "What was NVIDIA's net margin in its latest quarter?",
+    "ground_truth": "NVIDIA's net margin was 62.03% (net income $59,688 million divided by revenue $96,221 million) for the quarter ended July 26, 2026.",
+    "key_facts": [
+      "62.03"
+    ]
+  },
+  {
+    "id": 12,
+    "ticker": "MSFT",
+    "category": "ratio",
+    "question": "What was Microsoft's year-over-year revenue growth in its latest quarter?",
+    "ground_truth": "Microsoft's revenue grew 18.8% year over year, from $77,673 million to $92,279 million, for the quarter ended September 30, 2026.",
+    "key_facts": [
+      "18.8",
+      "18.8"
+    ]
+  },
+  {
+    "id": 13,
+    "ticker": "META",
+    "category": "ratio",
+    "question": "What was Meta's year-over-year revenue growth in its latest quarter?",
+    "ground_truth": "Meta's revenue grew 26.07% year over year, from $51,242 million to $64,601 million, for the quarter ended September 30, 2026.",
+    "key_facts": [
+      "26.07",
+      "26.1"
+    ]
+  },
+  {
+    "id": 14,
+    "ticker": "NVDA",
+    "category": "qualitative",
+    "question": "What does NVIDIA say about the impact of export controls in its latest 10-Q?",
+    "ground_truth": "NVIDIA states that export controls have and are likely in the future to have a disproportionate impact on NVIDIA, may disadvantage it against competitors outside the scope of the controls, and may encourage customers to design out U.S. semiconductors.",
+    "key_facts": [
+      "export control"
+    ]
+  },
+  {
+    "id": 15,
+    "ticker": "MSFT",
+    "category": "qualitative",
+    "question": "How did investments in OpenAI affect Microsoft's other income in its latest quarter?",
+    "ground_truth": "Microsoft's other income (expense), net included $272 million of net gains from investments in OpenAI for the three months ended September 30, 2026, compared with $4.1 billion of net losses in the prior-year quarter.",
+    "key_facts": [
+      "272"
+    ]
+  }
+]

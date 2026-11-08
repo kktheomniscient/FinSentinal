@@ -1,0 +1,26 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# local data (regenerate with: python -m app.ingestion.seed_universe)
+backend/data/raw_filings/
+backend/data/chroma_db/
+backend/data/ingestion_state.json
+
+# node / next
+node_modules/
+.next/
+*.tsbuildinfo
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/

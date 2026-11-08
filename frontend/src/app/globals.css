@@ -1,0 +1,212 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+/* Direction: institutional research desk. Cool ink-navy neutrals, one verdigris accent;
+   green/red/amber are reserved for meaning (market direction, grounding, warnings).
+   Plex Sans for UI, Plex Mono for tickers and figures, Source Serif for the memo body. */
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: var(--font-source-serif), Georgia, "Times New Roman", serif;
+  --font-heading: var(--font-sans);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-positive: var(--positive);
+  --color-negative: var(--negative);
+  --color-warning: var(--warning);
+  --color-signal: var(--signal);
+  --color-signal-soft: var(--signal-soft);
+  --color-surface: var(--surface);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+}
+
+:root {
+  color-scheme: light;
+  --radius: 0.5rem;
+  --background: oklch(0.975 0.006 250);
+  --surface: oklch(0.955 0.008 250);
+  --foreground: oklch(0.22 0.035 258);
+  --card: oklch(1 0.002 250);
+  --card-foreground: oklch(0.22 0.035 258);
+  --popover: oklch(1 0.002 250);
+  --popover-foreground: oklch(0.22 0.035 258);
+  --primary: oklch(0.27 0.045 258);
+  --primary-foreground: oklch(0.985 0.004 250);
+  --secondary: oklch(0.94 0.01 250);
+  --secondary-foreground: oklch(0.27 0.045 258);
+  --muted: oklch(0.945 0.008 250);
+  --muted-foreground: oklch(0.5 0.025 258);
+  --accent: oklch(0.935 0.012 250);
+  --accent-foreground: oklch(0.27 0.045 258);
+  --destructive: oklch(0.55 0.2 27);
+  --border: oklch(0.9 0.012 255);
+  --input: oklch(0.88 0.014 255);
+  --ring: oklch(0.55 0.1 195);
+  --signal: oklch(0.5 0.095 195);
+  --signal-soft: oklch(0.94 0.035 195);
+  --positive: oklch(0.52 0.13 152);
+  --negative: oklch(0.55 0.19 27);
+  --warning: oklch(0.62 0.14 70);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    color-scheme: dark;
+    --background: oklch(0.165 0.022 258);
+    --surface: oklch(0.2 0.024 258);
+    --foreground: oklch(0.94 0.01 250);
+    --card: oklch(0.2 0.024 258);
+    --card-foreground: oklch(0.94 0.01 250);
+    --popover: oklch(0.22 0.026 258);
+    --popover-foreground: oklch(0.94 0.01 250);
+    --primary: oklch(0.93 0.012 250);
+    --primary-foreground: oklch(0.2 0.03 258);
+    --secondary: oklch(0.26 0.028 258);
+    --secondary-foreground: oklch(0.94 0.01 250);
+    --muted: oklch(0.25 0.026 258);
+    --muted-foreground: oklch(0.7 0.02 255);
+    --accent: oklch(0.28 0.03 258);
+    --accent-foreground: oklch(0.94 0.01 250);
+    --destructive: oklch(0.7 0.18 25);
+    --border: oklch(1 0 0 / 9%);
+    --input: oklch(1 0 0 / 14%);
+    --ring: oklch(0.75 0.11 190);
+    --signal: oklch(0.78 0.11 190);
+    --signal-soft: oklch(0.3 0.05 195);
+    --positive: oklch(0.76 0.15 152);
+    --negative: oklch(0.72 0.17 25);
+    --warning: oklch(0.8 0.14 75);
+  }
+}
+
+.dark {
+  color-scheme: dark;
+  --background: oklch(0.165 0.022 258);
+  --surface: oklch(0.2 0.024 258);
+  --foreground: oklch(0.94 0.01 250);
+  --card: oklch(0.2 0.024 258);
+  --card-foreground: oklch(0.94 0.01 250);
+  --popover: oklch(0.22 0.026 258);
+  --popover-foreground: oklch(0.94 0.01 250);
+  --primary: oklch(0.93 0.012 250);
+  --primary-foreground: oklch(0.2 0.03 258);
+  --secondary: oklch(0.26 0.028 258);
+  --secondary-foreground: oklch(0.94 0.01 250);
+  --muted: oklch(0.25 0.026 258);
+  --muted-foreground: oklch(0.7 0.02 255);
+  --accent: oklch(0.28 0.03 258);
+  --accent-foreground: oklch(0.94 0.01 250);
+  --destructive: oklch(0.7 0.18 25);
+  --border: oklch(1 0 0 / 9%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.75 0.11 190);
+  --signal: oklch(0.78 0.11 190);
+  --signal-soft: oklch(0.3 0.05 195);
+  --positive: oklch(0.76 0.15 152);
+  --negative: oklch(0.72 0.17 25);
+  --warning: oklch(0.8 0.14 75);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "tnum";
+  }
+  ::selection {
+    background: color-mix(in oklch, var(--signal) 28%, transparent);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+@utility num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+@utility eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(250%);
+  }
+}
+.rise {
+  animation: rise 220ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.sweep-bar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, var(--signal), transparent);
+  animation: sweep 1.3s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rise {
+    animation: none;
+  }
+  .sweep-bar::after {
+    animation: none;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
